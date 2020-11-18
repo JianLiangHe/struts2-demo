@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="edu.demo.pojo.TDept" table="t_dept">
+		<id name="deptId" type="int" column="dept_id">
+		</id>
+		<!-- <property name="deptId" column="dept_id" type="int"/> -->
+	    <property name="deptName" column="dept_name" type="string"/>
+	    <property name="deptCreatetime" column="dept_createtime" type="string"/>
+		<property name="deptStatus" column="dept_status" type="int"/>		
+   	</class>
+</hibernate-mapping>

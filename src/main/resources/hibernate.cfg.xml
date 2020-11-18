@@ -13,7 +13,7 @@
         <property name="connection.password">Master555_</property>
 
         <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">1</property>
+        <property name="connection.pool_size">10</property>
 
         <!-- SQL dialect ,定义数据库方言-->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -23,6 +23,9 @@
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
+        
+        <!-- 映射的类 -->
+        <mapping resource="edu/demo/pojo/TDept.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>
