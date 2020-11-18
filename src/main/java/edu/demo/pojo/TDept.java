@@ -55,5 +55,11 @@ public class TDept implements Serializable {
 	public void setDeptStatus(int deptStatus) {
 		this.deptStatus = deptStatus;
 	}
+
+	@Override
+	public String toString() {
+		return "TDept [deptId=" + deptId + ", deptName=" + deptName + ", deptCreatetime=" + deptCreatetime
+				+ ", deptStatus=" + deptStatus + "]";
+	}
 	
 }
